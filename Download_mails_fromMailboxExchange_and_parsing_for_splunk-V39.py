@@ -14,13 +14,13 @@
 #                                 IMPORT DES MODULES PYTHON
 # -----------------------------------------------------------------------------------------
 
-import imaplib   # A voir s'il faut installer cette lib
-import email     # idem
+import imaplib
+import email
 import os
 import re
-import hashlib   # idem
+import hashlib
 import base64
-import pyzipper  # module à installer : pip install pyzipper
+import pyzipper
 
 # ------------------------------------------------------------------------------------
 #                                    LES VARIABLES
@@ -29,7 +29,7 @@ import pyzipper  # module à installer : pip install pyzipper
 # ------------------------------------------------------------------------------------
 
 # Paramètres de connexion IMAP (FQDN + LOGIN + MOT DE PASSE)
-IMAP_SERVER = "monServeurExchange.fr"
+IMAP_SERVER = "monFQDNServeurExchange.fr"
 IMAP_PORT = 993
 EMAIL = "maBoiteMail@monServeurExchange.fr"
 PASSWORD = "leMDPdeMaBoiteMail+-*/"
@@ -44,7 +44,6 @@ ZIP_PASSWORD = b"P@ssword0fZIP"
 # Dossiers de destination pour enregistrer les e-mails, les pièces jointes et les informations extraites
 MAILS_DIR = "/script/mails_raw" # mails
 ATTACHMENTS_DIR = "/script/attachments" # PJ
-#ATTACHMENTS_DIR = "/script_orion/script/zip_from_ftp" # PJ
 INFO_DIR = "/script/rapport_to_splunk" # fichier à Forward vers Splunk
 
 
